@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kalkulator.view.KalkulatorActivity">
+
+    <EditText
+        android:id="@+id/edt_input1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Value 1"/>
+
+    <EditText
+        android:id="@+id/edt_input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/edt_input1"
+        android:hint="Value 2"/>
+
+    <LinearLayout
+        android:id="@+id/ll_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/edt_input2"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/btn_tambah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_kurang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_bagi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="/"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_kali"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="x"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_hasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_Layout"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:hint="Hasil"/>
+
+</RelativeLayout>
