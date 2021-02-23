@@ -14,7 +14,8 @@
         android:theme="@style/Theme.Udacoding"
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
-        <activity android:name=".crud.CrudActivity"></activity>
+        <activity android:name=".bottombav.BottomActivity"></activity>
+        <activity android:name=".crud.CrudActivity" />
         <activity android:name=".database.view.splash.SplashActivity" />
         <activity android:name=".database.view.HomeActivity" />
         <activity android:name=".database.view.RegisterActivity" />

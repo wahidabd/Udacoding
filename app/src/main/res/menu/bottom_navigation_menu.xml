@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_pupular"
+        android:enabled="true"
+        android:title="Popular"
+        android:icon="@drawable/ic_popular"/>
+
+    <item
+        android:id="@+id/menu_bussinis"
+        android:enabled="true"
+        android:title="Bussinis"
+        android:icon="@drawable/ic_bussinis"/>
+
+    <item
+        android:id="@+id/menu_tech"
+        android:enabled="true"
+        android:title="Tech"
+        android:icon="@drawable/ic_tech"/>
+</menu>

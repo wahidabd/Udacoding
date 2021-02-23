@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.example.udacoding.bottombav.BottomActivity
 import com.example.udacoding.crud.CrudActivity
 import com.example.udacoding.database.view.LoginActivity
 import com.example.udacoding.database.view.splash.SplashActivity
@@ -20,6 +21,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btn_recyclerview.setOnClickListener(this)
         btn_database.setOnClickListener(this)
         btn_crud.setOnClickListener(this)
+        btn_news_api.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -41,6 +43,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
             btn_crud -> {
                 startActivity(Intent(this, CrudActivity::class.java))
+            }
+
+            btn_news_api -> {
+                startActivity(Intent(this, BottomActivity::class.java))
             }
         }
     }

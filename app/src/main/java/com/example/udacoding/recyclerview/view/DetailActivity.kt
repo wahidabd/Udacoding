@@ -20,6 +20,7 @@ class DetailActivity : AppCompatActivity() {
         val user = intent.getParcelableExtra<Hero>(EXTRA_DATA)
 
         tv_detail_name.text = user?.name
+        tv_detail_des.text= user?.detail
 
         Glide.with(this)
                 .load(user?.photo)
